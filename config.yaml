@@ -1,0 +1,20 @@
+"train_file": "train.json"
+"dev_file": "dev.json"
+"eval_file": "eval.json"
+
+# no_relation has to be the first relation in the labels_file
+"labels_file": "aux/labels.txt"
+"relation_possibilities_file": "aux/tacred_relation_possibilities.json"
+"prompts_file": "aux/tacred_prompt_questions.csv"
+# whether to include the no-relation samples from the training data
+"no_rel": False
+
+"model": "SpanBERT/spanbert-base-cased"
+"tokenizer": "SpanBERT/spanbert-base-cased"
+"save_model": False
+
+"batch_size": 8
+"batch_accumulations": 4
+"lr": 3.e-5
+"num_epochs": 3
+"eval_steps": 2000
